@@ -1,0 +1,23 @@
+{
+  "name": "typescript-node-template",
+  "version": "1.0.0",
+  "description": "Typescript Node.js project bootstrap",
+  "repository": "github.com/astanciu/typescript-node-template",
+  "author": "Alex Stanciu",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "dev": "concurrently -k -p \"[{name}]\" -n\"TypeScript,Node\" \"tsc -w\" \"nodemon dist/index.js \""
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.12",
+    "@typescript-eslint/eslint-plugin": "^2.3.3",
+    "@typescript-eslint/parser": "^2.3.3",
+    "concurrently": "^5.0.0",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.4"
+  }
+}
